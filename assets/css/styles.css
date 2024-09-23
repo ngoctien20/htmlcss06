@@ -108,6 +108,7 @@ padding: 12px;
     color: var(--black);
     text-shadow: 1px 0 0;
 }
+/* hero */
 .hero{
     margin-top: 44px;
     display: flex;
@@ -191,3 +192,4 @@ margin-right: 15px;
     bottom: 0;
     right: 0;
 }
+/* clients */
