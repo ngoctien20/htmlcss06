@@ -1,507 +1,923 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- css  -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- grid layout -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
+            rel="stylesheet" />
+        <!--animate  -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/img/favicon/apple-icon-57x57.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/img/favicon/apple-icon-60x60.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/img/favicon/apple-icon-72x72.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/img/favicon/apple-icon-76x76.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/img/favicon/apple-icon-114x114.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/img/favicon/apple-icon-120x120.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/img/favicon/apple-icon-144x144.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/img/favicon/apple-icon-152x152.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/img/favicon/apple-icon-180x180.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/img/favicon/android-icon-192x192.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/img/favicon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/img/favicon/favicon-96x96.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/img/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/img/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <!-- reset css -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <!-- css  -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!-- grid layout -->
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <!-- responsive -->
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
-        rel="stylesheet" />
-    <!--animate  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./assets/img/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-</head>
-
-<body>
-    <!-- header -->
-    <header class="header">
-        <div class="header_container">
-            <div class="header_inner">
-                <!-- Navbar left -->
-                <nav class="navbar_left">
-                    <a href="#!"><img src="./assets/img/header_01.png" alt="" class="navbar_left_img" /></a>
-                    <a href="#!">
-                        <p class="navbar_left_desc">hi@arif.interactive</p>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="header_container">
+                <div class="header_inner">
+                    <!-- Navbar left -->
+                    <nav class="navbar_left">
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/header_01.png"
+                                alt=""
+                                class="navbar_left_img"
+                        /></a>
+                        <a href="#!">
+                            <p class="navbar_left_desc">hi@arif.interactive</p>
+                        </a>
+                    </nav>
+                    <!-- Logo -->
+                    <a href="#!"
+                        ><img
+                            src="./assets/img/logo.png"
+                            alt="Memoji Boys"
+                            class="navbar_logo" />
                     </a>
-                </nav>
-                <!-- Logo -->
-                <a href="#!"><img src="./assets/img/logo.png" alt="Memoji Boys" class="navbar_logo" />
-                </a>
-                <!-- show mobile -->
-                <div class="navbar_mobile hed_pc show_mobile">
-                    <a href="#!"><img src="./assets/img/header_01.png" alt="" class="navbar_left_img" /></a>
-                    <a href="#!"><img src="./assets/img/header_02.png" alt="" class="navbar_left_img" /></a>
-                </div>
+                    <!-- show mobile -->
+                    <div class="navbar_mobile hed_pc show_mobile">
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/header_01.png"
+                                alt=""
+                                class="navbar_left_img"
+                        /></a>
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/header_02.png"
+                                alt=""
+                                class="navbar_left_img"
+                        /></a>
+                    </div>
 
-                <!-- Navbar right-->
-                <nav class="navbar_right">
-                    <ul class="navbar_right_list">
-                        <li class="navbar_right_item">
-                            <a href="#Project" class="navbar_link">Projects</a>
-                        </li>
-                        <li class="navbar_right_item">
-                            <a href="#journey" class="navbar_link">Journey</a>
-                        </li>
-                        <li class="navbar_right_item">
-                            <a href="#service" class="navbar_link"> Service </a>
-                        </li>
-                        <li class="navbar_right_item">
-                            <a href="#contact" class="navbar_link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- hero -->
-        <div class="hero">
-            <div class="container">
-                <section class="row">
-                    <div class="col-lg-6 col-12 mobile_order_2">
-                        <div class="hero_left">
-                            <img src="./assets/img/hero_01.png" alt="" class="hero_img" />
-                            <img src="./assets/img/hero_06.png" alt="" class="hero_decor_left" />
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12 mobile_order_1">
-                        <div class="hero_right">
-                            <h1 class="hero_heading section_heading">
-                                An Interactive Designer
-                            </h1>
-                            <p class="section_desc hero_desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In urna, non nisl tincidunt
-                                ut elementum turpis.
-                            </p>
-                            <div class="hero_actions">
-                                <a href="#!" class="btn hero_btn">Book a Call</a>
-                                <a href="#!" class="section_link hero_link">My Works</a>
-                            </div>
-                            <div class="hero_follow">
-                                <p class="hero_follow_title">
-                                    Follow me on:
-                                </p>
-                                <div class="hero_socials">
-                                    <a href="#!" class="hero_social_link">
-                                        <img src="./assets/img/hero_02.png" alt="" class="hero_social_icon" />
-                                    </a>
-                                    <a href="#!" class="hero_social_link">
-                                        <img src="./assets/img/hero_03.png" alt="" class="hero_social_icon" />
-                                    </a>
-                                    <a href="#!" class="hero_social_link">
-                                        <img src="./assets/img/hero_04.png" alt="" class="hero_social_icon" />
-                                    </a>
-                                </div>
-                            </div>
-                            <img src="./assets/img/hero_07.png" alt="" class="hero_decor_right" />
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- Social -->
-        <section class="social">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="social_inner">
-                            <h2 class="section_heading">
-                                <span class="social_heading">Meet my recent clients</span>
-                            </h2>
-                            <div class="social_list">
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-01.svg" alt="Social" class="social_item" />
+                    <!-- Navbar right-->
+                    <nav class="navbar_right">
+                        <ul class="navbar_right_list">
+                            <li class="navbar_right_item">
+                                <a href="#Project" class="navbar_link"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li class="navbar_right_item">
+                                <a href="#journey" class="navbar_link"
+                                    >Journey</a
+                                >
+                            </li>
+                            <li class="navbar_right_item">
+                                <a href="#service" class="navbar_link">
+                                    Service
                                 </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-02.svg" alt="Social" class="social_item" />
-                                </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-03.svg" alt="Social" class="social_item" />
-                                </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-04.svg" alt="Social" class="social_item" />
-                                </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-05.svg" alt="Social" class="social_item" />
-                                </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-06.svg" alt="Social" class="social_item" />
-                                </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-07.svg" alt="Social" class="social_item" />
-                                </a>
-                                <a href="#!">
-                                    <img src="./assets/img/icon_logo/social-08.svg" alt="Social" class="social_item" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                            </li>
+                            <li class="navbar_right_item">
+                                <a href="#contact" class="navbar_link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </section>
-        <!-- Special -->
-        <section class="special">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="special_top">
-                            <h2 class="section_heading special_heading">
-                                Specialities
-                            </h2>
-                            <p class="section_desc special_desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In urna, non nisl tincidunt
-                                ut elementum turpis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="special_list row">
-                    <!--Special Item 1 -->
-                    <div class="col-lg-4">
-                        <div class="special_item">
-                            <img src="./assets/img/specia_icon1.svg" alt="icon" class="special_item_img" />
-                            <h3>
-                                <a class="special_item_heading section_heading" href="#!">Product design</a>
-                            </h3>
-                            <p class="special_item_desc section_desc">
-                                Lorem ipsum dolor sit amet, solor adipiscing
-                                elit. Non nisl solor ut elementum turpis.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Special Item 2 -->
-                    <div class="col-lg-4">
-                        <div class="special_item hed_mobile">
-                            <img src="./assets/img/specia_icon2.svg" alt="icon" class="special_item_img" />
-                            <h3>
-                                <a class="special_item_heading section_heading" href="#!">UI/UX Design</a>
-                            </h3>
-                            <p class="special_item_desc section_desc">
-                                Lorem ipsum dolor sit amet, solor adipiscing
-                                elit. Non nisl solor ut elementum turpis.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Special Item 3 -->
-                    <div class="col-lg-4">
-                        <div class="special_item hed_mobile">
-                            <img src="./assets/img/specia_icon3.svg" alt="icon" class="special_item_img" />
-                            <h3>
-                                <a class="special_item_heading section_heading" href="#!">Interactive design</a>
-                            </h3>
-                            <p class="special_item_desc section_desc">
-                                Lorem ipsum dolor sit amet, solor adipiscing
-                                elit. Non nisl solor ut elementum turpis.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="mobile_item_group hed_pc show_mobile ">
-                        <div class="mobile_item"></div>
-                        <div class="mobile_item"></div>
-                        <div class="mobile_item"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Project -->
-        <section class="project" id="project">
-            <div class="project_inner">
+        </header>
+        <main>
+            <!-- hero -->
+            <div class="hero">
                 <div class="container">
-                    <div class="row project_top">
-                        <div class="col-12 col-lg-5">
-                            <h2 class="section_heading project_heading">
-                                Take a look at my recent projects
-                            </h2>
-                        </div>
-                        <div class="col-lg-4 offset-lg-1 col-12">
-                            <p class="section_desc project_desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In urna, non nisl tincidunt
-                                ut elementum turpis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row project_list">
-                        <!-- Project item 1 -->
-                        <div class="col-lg-6 col-12">
-                            <div class="project_item">
-                                <div class="project_item_info">
-                                    <h3>
-                                        <a href="#!" class="project_sub_heading">Wally Website</a>
-                                    </h3>
-                                    <p class="project_item_desc">
-                                        Lorem ipsum dolor amet, consectetur
-                                        adipiscing st elit.
-                                    </p>
-                                    <a href="#!" class="project_item_link section_link">Case Study</a>
-                                </div>
-                                <figure class="project_item_wrap">
-                                    <img src="./assets/img/project_1.png" alt="Project 01" class="project_item_img" />
-                                </figure>
-                                <img src="./assets/img/project_decor.svg" alt="Decor" class="project_item_decor hed_mobile" />
-                                <img src="./assets/img/project_decor_2.svg" alt="Decor" class="project_item_decor_2 hed_mobile" />
-                                <!-- mobile -->
-                                <img src="./assets/img/decor_moblie.svg" alt="Decor" class="decor_mobile hed_pc show_mobile" />
+                    <section class="row">
+                        <div class="col-lg-6 col-12 mobile_order_2">
+                            <div
+                                class="hero_left"
+                                data-aos="fade-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000">
+                                <img
+                                    src="./assets/img/hero_01.png"
+                                    alt=""
+                                    class="hero_img" />
+                                <img
+                                    src="./assets/img/hero_06.png"
+                                    alt=""
+                                    class="hero_decor_left" />
                             </div>
                         </div>
-                        <!-- Project item 2 -->
-                        <div class="col-lg-6 col-12">
-                            <div class="project_item">
-                                <div class="project_item_info">
-                                    <h3>
-                                        <a href="#!" class="project_sub_heading">Banking App</a>
-                                    </h3>
-                                    <p class="project_item_desc">
-                                        Lorem ipsum dolor amet, consectetur
-                                        adipiscing st elit.
-                                    </p>
-                                    <a href="#!" class="project_item_link section_link">Case Study</a>
+                        <div class="col-lg-6 col-12 mobile_order_1">
+                            <div class="hero_right">
+                                <h1
+                                    class="hero_heading section_heading"
+                                    data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    An Interactive Designer
+                                </h1>
+                                <p
+                                    class="section_desc hero_desc"
+                                    data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                                <div class="hero_actions">
+                                    <a
+                                        href="#!"
+                                        class="btn hero_btn"
+                                        data-aos="fade-right"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600"
+                                        >Book a Call</a
+                                    >
+                                    <a
+                                        href="#!"
+                                        class="section_link hero_link"
+                                        data-aos="fade-left"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600"
+                                        >My Works</a
+                                    >
                                 </div>
-                                <figure class="project_item_wrap">
-                                    <img src="./assets/img/project_2.png" alt="Project 01" class="project_item_img" />
-                                </figure>
-                                <img src="./assets/img/project_decor.svg" alt="Decor" class="project_item_decor hed_mobile" />
-                                <img src="./assets/img/project_decor_2.svg" alt="Decor" class="project_item_decor_2 hed_mobile" />
-                                <!-- mobile -->
-                                <img src="./assets/img/decor_moblie.svg" alt="Decor" class="decor_mobile hed_pc show_mobile" />
+                                <div
+                                    class="hero_follow"
+                                    data-aos="zoom-in-up"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    <p class="hero_follow_title">
+                                        Follow me on:
+                                    </p>
+                                    <div class="hero_socials">
+                                        <a href="#!" class="hero_social_link">
+                                            <img
+                                                src="./assets/img/hero_02.png"
+                                                alt=""
+                                                class="hero_social_icon" />
+                                        </a>
+                                        <a href="#!" class="hero_social_link">
+                                            <img
+                                                src="./assets/img/hero_03.png"
+                                                alt=""
+                                                class="hero_social_icon" />
+                                        </a>
+                                        <a href="#!" class="hero_social_link">
+                                            <img
+                                                src="./assets/img/hero_04.png"
+                                                alt=""
+                                                class="hero_social_icon" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <img
+                                    src="./assets/img/hero_07.png"
+                                    alt=""
+                                    class="hero_decor_right" />
                             </div>
                         </div>
-                        <!-- Project item 3 -->
-                        <div class="col-lg-6 col-12">
-                            <div class="project_item">
-                                <div class="project_item_info">
-                                    <h3>
-                                        <a href="#!" class="project_sub_heading">Web App</a>
-                                    </h3>
-                                    <p class="project_item_desc">
-                                        Lorem ipsum dolor amet, consectetur
-                                        adipiscing st elit.
-                                    </p>
-                                    <a href="#!" class="project_item_link section_link">Case Study</a>
-                                </div>
-                                <figure class="project_item_wrap">
-                                    <img src="./assets/img/project_3.png" alt="Project 01" class="project_item_img" />
-                                </figure>
-                                <img src="./assets/img/project_decor.svg" alt="Decor" class="project_item_decor hed_mobile" />
-                                <img src="./assets/img/project_decor_2.svg" alt="Decor" class="project_item_decor_2 hed_mobile" />
-                                <!-- moblie -->
-                                <img src="./assets/img/decor_moblie.svg" alt="Decor" class="decor_mobile hed_pc show_mobile" />
-                            </div>
-                        </div>
-                        <!-- Project item 4 -->
-                        <div class="col-lg-6 col-12">
-                            <div class="project_item">
-                                <div class="project_item_info">
-                                    <h3>
-                                        <a href="#!" class="project_sub_heading">Oculus Website</a>
-                                    </h3>
-                                    <p class="project_item_desc">
-                                        Lorem ipsum dolor amet, consectetur
-                                        adipiscing st elit.
-                                    </p>
-                                    <a href="#!" class="project_item_link section_link">Case Study</a>
-                                </div>
-                                <figure class="project_item_wrap">
-                                    <img src="./assets/img/project_4.png" alt="Project 01" class="project_item_img" />
-                                </figure>
-                                <img src="./assets/img/project_decor.svg" alt="Decor" class="project_item_decor hed_mobile" />
-                                <img src="./assets/img/project_decor_2.svg" alt="Decor" class="project_item_decor_2 hed_mobile" />
-                                <!-- mobile -->
-                                <img src="./assets/img/decor_moblie.svg" alt="Decor" class="decor_mobile hed_pc show_mobile" />
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <a href="#!" class="btn project_btn">All Projects</a>
+                    </section>
                 </div>
             </div>
-        </section>
-        <!-- Interact -->
-        <section class="interact" id="journey">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="interact_top">
-                            <p class="interact_sub_heading">
-                                Hey,,,,It’s Arif
-                                <img src="./assets/img/icon/interact_icon_hey.png" alt="" class="interact_icon_hey">
-                            </p>
-                            <h2 class="section_heading interact_heading">
-                                Interactive Designer
-                            </h2>
-                            <p class="section_desc interact_desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In urna, non nisl tincidunt
-                                ut elementum turpis.
-                            </p>
+            <!-- Social -->
+            <section class="social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="social_inner">
+                                <h2 class="section_heading">
+                                    <span
+                                        class="social_heading"
+                                        class="btn card_btn"
+                                        data-aos="zoom-in-right"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600"
+                                        >Meet my recent clients</span
+                                    >
+                                </h2>
+                                <div class="social_list">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-01.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-right"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-02.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-down"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-03.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-down"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-04.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-left"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-05.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-right"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-06.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-07.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-up"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/icon_logo/social-08.svg"
+                                            alt="Social"
+                                            class="social_item"
+                                            data-aos="fade-left"
+                                            data-aos-anchor-placement="bottom-bottom"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="600" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row interact_row">
-                    <div class="interact_bottom col-12 col-lg-10 offset-lg-1">
-                        <div class="interact_bottom_inner">
-                            <div class="interact_list">
-                                <!--Interact Item 1 -->
-                                <div class="interact_item">
-                                    <p class="interact_item_heading">21+</p>
-                                    <p class="interact_item_desc">
-                                        Features & Awards
-                                    </p>
-                                </div>
-                                <!--Interact Item 1 -->
-                                <div class="interact_item">
-                                    <p class="interact_item_heading">08+</p>
-                                    <p class="interact_item_desc">
-                                        Years Experience
-                                    </p>
-                                </div>
-                                <!--Interact Item 1 -->
-                                <div class="interact_item">
-                                    <p class="interact_item_heading">97%</p>
-                                    <p class="interact_item_desc">
-                                        Clients Rating
-                                    </p>
-                                </div>
+            </section>
+            <!-- Special -->
+            <section class="special">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="special_top">
+                                <h2
+                                    class="section_heading special_heading"
+                                    data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    Specialities
+                                </h2>
+                                <p
+                                    class="section_desc special_desc"
+                                    data-aos="fade-up"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="special_list row">
+                        <!--Special Item 1 -->
+                        <div class="col-lg-4">
+                            <div
+                                class="special_item"
+                                data-aos="zoom-in-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                <img
+                                    src="./assets/img/specia_icon1.svg"
+                                    alt="icon"
+                                    class="special_item_img"
+                                    data-aos="zoom-in-right"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600" />
+                                <h3>
+                                    <a
+                                        class="special_item_heading section_heading"
+                                        data-aos="zoom-in-right"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600"
+                                        href="#!"
+                                        >Product design</a
+                                    >
+                                </h3>
+                                <p
+                                    class="special_item_desc section_desc"
+                                    data-aos="zoom-in-right"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <!--Special Item 2 -->
+                        <div class="col-lg-4">
+                            <div
+                                class="special_item hed_mobile"
+                                data-aos="zoom-in"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                <img
+                                    src="./assets/img/specia_icon2.svg"
+                                    alt="icon"
+                                    class="special_item_img"
+                                    data-aos="zoom-in"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600" />
+                                <h3>
+                                    <a
+                                        class="special_item_heading section_heading"
+                                        data-aos="zoom-in"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600"
+                                        href="#!"
+                                        >UI/UX Design</a
+                                    >
+                                </h3>
+                                <p
+                                    class="special_item_desc section_desc"
+                                    data-aos="zoom-in"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <!--Special Item 3 -->
+                        <div class="col-lg-4">
+                            <div
+                                class="special_item hed_mobile"
+                                data-aos="zoom-in-left"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                <img
+                                    src="./assets/img/specia_icon3.svg"
+                                    alt="icon"
+                                    class="special_item_img"
+                                    data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600" />
+                                <h3>
+                                    <a
+                                        class="special_item_heading section_heading"
+                                        data-aos="zoom-in-left"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600"
+                                        href="#!"
+                                        >Interactive design</a
+                                    >
+                                </h3>
+                                <p
+                                    class="special_item_desc section_desc"
+                                    data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mobile_item_group hed_pc show_mobile">
+                            <div class="mobile_item"></div>
+                            <div class="mobile_item"></div>
+                            <div class="mobile_item"></div>
                         </div>
                     </div>
                 </div>
-                <figure class="interact_video_wrap">
-                    <video poster="./assets/img/interact_poster.jpg" loop controls
-                        src="./assets/video/A Day In The Life Of A Software Engineer - realistic - NYC Edition.mp4"
-                        class="interact_video"></video>
-                    <div class="interact_intro">Intro Video</div>
-                </figure>
-            </div>
-        </section>
-        <!-- Blog -->
-        <section class="blog">
-            <div class="container">
-                <div class="blog_top">
-                    <h2 class="section_heading blog_heading">
-                        What people says
-                    </h2>
-                    <p class="section_desc blog_desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. In urna, non nisl tincidunt ut elementum
-                        turpis.
-                    </p>
+            </section>
+            <!-- Project -->
+            <section class="project" id="project">
+                <div class="project_inner">
+                    <div class="container">
+                        <div class="row project_top">
+                            <div class="col-12 col-lg-5">
+                                <h2
+                                    class="section_heading project_heading"
+                                    data-aos="zoom-in-right"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    Take a look at my recent projects
+                                </h2>
+                            </div>
+                            <div class="col-lg-4 offset-lg-1 col-12">
+                                <p
+                                    class="section_desc project_desc"
+                                    data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="800">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row project_list">
+                            <!-- Project item 1 -->
+                            <div class="col-lg-6 col-12">
+                                <div
+                                    class="project_item"
+                                    data-aos="fade-right"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    <div class="project_item_info">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="project_sub_heading"
+                                                >Wally Website</a
+                                            >
+                                        </h3>
+                                        <p class="project_item_desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="project_item_link section_link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <figure class="project_item_wrap">
+                                        <img
+                                            src="./assets/img/project_1.png"
+                                            alt="Project 01"
+                                            class="project_item_img" />
+                                    </figure>
+                                    <img
+                                        src="./assets/img/project_decor.svg"
+                                        alt="Decor"
+                                        class="project_item_decor hed_mobile" />
+                                    <img
+                                        src="./assets/img/project_decor_2.svg"
+                                        alt="Decor"
+                                        class="project_item_decor_2 hed_mobile" />
+                                    <!-- mobile -->
+                                    <img
+                                        src="./assets/img/decor_moblie.svg"
+                                        alt="Decor"
+                                        class="decor_mobile hed_pc show_mobile" />
+                                </div>
+                            </div>
+                            <!-- Project item 2 -->
+                            <div class="col-lg-6 col-12">
+                                <div
+                                    class="project_item"
+                                    data-aos="fade-left"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    <div class="project_item_info">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="project_sub_heading"
+                                                >Banking App</a
+                                            >
+                                        </h3>
+                                        <p class="project_item_desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="project_item_link section_link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <figure class="project_item_wrap">
+                                        <img
+                                            src="./assets/img/project_2.png"
+                                            alt="Project 01"
+                                            class="project_item_img" />
+                                    </figure>
+                                    <img
+                                        src="./assets/img/project_decor.svg"
+                                        alt="Decor"
+                                        class="project_item_decor hed_mobile" />
+                                    <img
+                                        src="./assets/img/project_decor_2.svg"
+                                        alt="Decor"
+                                        class="project_item_decor_2 hed_mobile" />
+                                    <!-- mobile -->
+                                    <img
+                                        src="./assets/img/decor_moblie.svg"
+                                        alt="Decor"
+                                        class="decor_mobile hed_pc show_mobile" />
+                                </div>
+                            </div>
+                            <!-- Project item 3 -->
+                            <div class="col-lg-6 col-12">
+                                <div
+                                    class="project_item"
+                                    data-aos="fade-right"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    <div class="project_item_info">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="project_sub_heading"
+                                                >Web App</a
+                                            >
+                                        </h3>
+                                        <p class="project_item_desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="project_item_link section_link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <figure class="project_item_wrap">
+                                        <img
+                                            src="./assets/img/project_3.png"
+                                            alt="Project 01"
+                                            class="project_item_img" />
+                                    </figure>
+                                    <img
+                                        src="./assets/img/project_decor.svg"
+                                        alt="Decor"
+                                        class="project_item_decor hed_mobile" />
+                                    <img
+                                        src="./assets/img/project_decor_2.svg"
+                                        alt="Decor"
+                                        class="project_item_decor_2 hed_mobile" />
+                                    <!-- moblie -->
+                                    <img
+                                        src="./assets/img/decor_moblie.svg"
+                                        alt="Decor"
+                                        class="decor_mobile hed_pc show_mobile" />
+                                </div>
+                            </div>
+                            <!-- Project item 4 -->
+                            <div class="col-lg-6 col-12">
+                                <div
+                                    class="project_item"
+                                    data-aos="fade-left"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    <div class="project_item_info">
+                                        <h3>
+                                            <a
+                                                href="#!"
+                                                class="project_sub_heading"
+                                                >Oculus Website</a
+                                            >
+                                        </h3>
+                                        <p class="project_item_desc">
+                                            Lorem ipsum dolor amet, consectetur
+                                            adipiscing st elit.
+                                        </p>
+                                        <a
+                                            href="#!"
+                                            class="project_item_link section_link"
+                                            >Case Study</a
+                                        >
+                                    </div>
+                                    <figure class="project_item_wrap">
+                                        <img
+                                            src="./assets/img/project_4.png"
+                                            alt="Project 01"
+                                            class="project_item_img" />
+                                    </figure>
+                                    <img
+                                        src="./assets/img/project_decor.svg"
+                                        alt="Decor"
+                                        class="project_item_decor hed_mobile" />
+                                    <img
+                                        src="./assets/img/project_decor_2.svg"
+                                        alt="Decor"
+                                        class="project_item_decor_2 hed_mobile" />
+                                    <!-- mobile -->
+                                    <img
+                                        src="./assets/img/decor_moblie.svg"
+                                        alt="Decor"
+                                        class="decor_mobile hed_pc show_mobile" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a
+                            href="#!"
+                            class="btn project_btn"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-easing="linear"
+                            data-aos-duration="600"
+                            >All Projects</a
+                        >
+                    </div>
                 </div>
-                <div class="row blog_row">
-                    <!-- Blog Item 1 -->
-                    <div class="col-12 blog_item">
-                        <p class="blog_item_message">
-                            “Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa.”
-                        </p>
-                        <div class="blog_item_group">
-                            <div class="blog_group_avt">
-                                <figure class="blog_group_avt-wrap">
-                                    <img src="./assets/img/blog_avt.png" alt="Avatar" class="blog_avatar" />
-                                </figure>
-                                <p class="blog_item_name">Joe Elia</p>
+            </section>
+            <!-- Interact -->
+            <section class="interact" id="journey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="interact_top">
+                                <p
+                                    class="interact_sub_heading"
+                                    data-aos="fade-down"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    Hey,,,,It’s Arif
+                                    <img
+                                        src="./assets/img/icon/interact_icon_hey.png"
+                                        alt=""
+                                        class="interact_icon_hey" />
+                                </p>
+                                <h2
+                                    class="section_heading interact_heading"
+                                    data-aos="fade-right"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    Interactive Designer
+                                </h2>
+                                <p
+                                    class="section_desc interact_desc"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
                             </div>
-                            <p class="blog_item_info">
-                                User Interface Design at PCL Lab
-                            </p>
                         </div>
                     </div>
-                    <!-- Blog Item 2 -->
-                    <div class="col-12 blog_item hed_pc">
-                        <p class="blog_item_message">
-                            “Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa.”
-                        </p>
-                        <div class="blog_item_group">
-                            <div class="blog_group_avt">
-                                <figure class="blog_group_avt-wrap">
-                                    <img src="./assets/img/blog_avt.png" alt="Avatar" class="blog_avatar" />
-                                </figure>
-                                <p class="blog_item_name">Selina</p>
+                    <div class="row interact_row">
+                        <div
+                            class="interact_bottom col-12 col-lg-10 offset-lg-1">
+                            <div class="interact_bottom_inner">
+                                <div class="interact_list">
+                                    <!--Interact Item 1 -->
+                                    <div
+                                        class="interact_item"
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600">
+                                        <p class="interact_item_heading">21+</p>
+                                        <p class="interact_item_desc">
+                                            Features & Awards
+                                        </p>
+                                    </div>
+                                    <!--Interact Item 1 -->
+                                    <div
+                                        class="interact_item"
+                                        data-aos="fade-down"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600">
+                                        <p class="interact_item_heading">08+</p>
+                                        <p class="interact_item_desc">
+                                            Years Experience
+                                        </p>
+                                    </div>
+                                    <!--Interact Item 1 -->
+                                    <div
+                                        class="interact_item"
+                                        data-aos="fade-right"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="600">
+                                        <p class="interact_item_heading">97%</p>
+                                        <p class="interact_item_desc">
+                                            Clients Rating
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="blog_item_info">
-                                User Interface Design at PCL Lab
-                            </p>
                         </div>
                     </div>
-                    <!-- Blog Item 3 -->
-                    <div class="col-12 blog_item hed_pc">
-                        <p class="blog_item_message">
-                            “Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa.”
+                    <figure
+                        class="interact_video_wrap"
+                        data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-duration="1000">
+                        <video
+                            poster="./assets/img/interact_poster.jpg"
+                            loop
+                            controls
+                            src="./assets/video/A Day In The Life Of A Software Engineer - realistic - NYC Edition.mp4"
+                            class="interact_video"></video>
+                        <div class="interact_intro">Intro Video</div>
+                    </figure>
+                </div>
+            </section>
+            <!-- Blog -->
+            <section class="blog">
+                <div class="container">
+                    <div class="blog_top">
+                        <h2
+                            class="section_heading blog_heading"
+                            data-aos="fade-down"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-easing="linear"
+                            data-aos-duration="600">
+                            What people says
+                        </h2>
+                        <p
+                            class="section_desc blog_desc"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
                         </p>
-                        <div class="blog_item_group">
-                            <div class="blog_group_avt">
-                                <figure class="blog_group_avt-wrap">
-                                    <img src="./assets/img/blog_avt.png" alt="Avatar" class="blog_avatar" />
-                                </figure>
-                                <p class="blog_item_name">Emily Sam</p>
-                            </div>
-                            <p class="blog_item_info">
-                                User Interface Design at PCL Lab
-                            </p>
-                        </div>
                     </div>
-                    <!-- Blog Item 4 -->
-                    <div class="col-12 blog_item hed_pc">
-                        <p class="blog_item_message">
-                            “Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa.”
-                        </p>
-                        <div class="blog_item_group">
-                            <div class="blog_group_avt">
-                                <figure class="blog_group_avt-wrap">
-                                    <img src="./assets/img/blog_avt.png" alt="Avatar" class="blog_avatar" />
-                                </figure>
-                                <p class="blog_item_name">Mr.T</p>
+                    <div class="row blog_row">
+                        <!-- Blog Item 1 -->
+                        <div class="col-12 blog_item">
+                            <div class="typewriter">
+                                <p class="blog_item_message" id="text">
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </p>
                             </div>
-                            <p class="blog_item_info">
-                                User Interface Design at PCL Lab
+                            <div class="blog_item_group">
+                                <div class="blog_group_avt">
+                                    <figure class="blog_group_avt-wrap">
+                                        <img
+                                            src="./assets/img/blog_avt.png"
+                                            alt="Avatar"
+                                            class="blog_avatar" />
+                                    </figure>
+                                    <p class="blog_item_name">Joe Elia</p>
+                                </div>
+                                <p class="blog_item_info">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Blog Item 2 -->
+                        <div class="col-12 blog_item hed_pc">
+                            <div class="typewriter">
+                                <p class="blog_item_message" id="text">
+                                    “Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa.”
+                                </p>
+                            </div>
+                            <div class="blog_item_group">
+                                <div class="blog_group_avt">
+                                    <figure class="blog_group_avt-wrap">
+                                        <img
+                                            src="./assets/img/blog_avt.png"
+                                            alt="Avatar"
+                                            class="blog_avatar" />
+                                    </figure>
+                                    <p class="blog_item_name">Selina</p>
+                                </div>
+                                <p class="blog_item_info">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Blog Item 3 -->
+                        <div class="col-12 blog_item hed_pc">
+                            <p class="blog_item_message">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
                             </p>
+                            <div class="blog_item_group">
+                                <div class="blog_group_avt">
+                                    <figure class="blog_group_avt-wrap">
+                                        <img
+                                            src="./assets/img/blog_avt.png"
+                                            alt="Avatar"
+                                            class="blog_avatar" />
+                                    </figure>
+                                    <p class="blog_item_name">Emily Sam</p>
+                                </div>
+                                <p class="blog_item_info">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -514,222 +930,431 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/img/blog_decor.svg" alt="blog-decor-01" class="blog_decor_01" />
-                <img src="./assets/img/blog_decor_2.svg" alt="blog-decor-02" class="blog_decor_02" />
-            </div>
-        </section>
-        <!-- Question -->
-        <section class="question">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="section_heading question_heading">
-                            A few questions clients normally ask me
-                        </h2>
+                <img
+                    src="./assets/img/blog_decor.svg"
+                    alt="blog-decor-01"
+                    class="blog_decor_01" />
+                <img
+                    src="./assets/img/blog_decor_2.svg"
+                    alt="blog-decor-02"
+                    class="blog_decor_02" />
+            </section>
+            <!-- Question -->
+            <section class="question">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2
+                                class="section_heading question_heading"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                A few questions clients normally ask me
+                            </h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row question_list">
-                    <div class="col-lg-10 col-12">
-                        <!-- Question item 1 -->
-                        <div>
-                            <input type="checkbox" name="question" id="question-check-box-01" hidden />
-                            <div class="question_item">
-                                <div class="question_item_top">
-                                    <h3 class="question_item_heading">
-                                        What is your hourly rate?
-                                    </h3>
-                                    <label for="question-check-box-01" class="question_item_control"></label>
+                    <div class="row question_list">
+                        <div class="col-lg-10 col-12">
+                            <!-- Question item 1 -->
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="question"
+                                    id="question-check-box-01"
+                                    hidden />
+                                <div class="question_item">
+                                    <div class="question_item_top">
+                                        <h3
+                                            class="question_item_heading"
+                                            data-aos="fade-down"
+                                            data-aos-anchor="#example-anchor"
+                                            data-aos-offset="500"
+                                            data-aos-duration="500">
+                                            What is your hourly rate?
+                                        </h3>
+                                        <label
+                                            for="question-check-box-01"
+                                            class="question_item_control"></label>
+                                    </div>
+                                    <p class="question_item_desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
                                 </div>
-                                <p class="question_item_desc">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. In urna, non nisl
-                                    tincidunt ut elementum turpis.
-                                </p>
                             </div>
-                        </div>
-                        <!-- Question item 2 -->
-                        <div>
-                            <input type="checkbox" name="question" id="question-check-box-02" hidden />
-                            <div class="question_item">
-                                <div class="question_item_top">
-                                    <h3 class="question_item_heading">
-                                        What type of projects do you take
-                                        on?
-                                    </h3>
-                                    <label for="question-check-box-02" class="question_item_control"></label>
+                            <!-- Question item 2 -->
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="question"
+                                    id="question-check-box-02"
+                                    hidden />
+                                <div class="question_item">
+                                    <div class="question_item_top">
+                                        <h3
+                                            class="question_item_heading"
+                                            data-aos="fade-down"
+                                            data-aos-anchor="#example-anchor"
+                                            data-aos-offset="500"
+                                            data-aos-duration="500">
+                                            What type of projects do you take
+                                            on?
+                                        </h3>
+                                        <label
+                                            for="question-check-box-02"
+                                            class="question_item_control"></label>
+                                    </div>
+                                    <p class="question_item_desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
                                 </div>
-                                <p class="question_item_desc">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. In urna, non nisl
-                                    tincidunt ut elementum turpis.
-                                </p>
                             </div>
-                        </div>
 
-                        <!-- Question item 3 -->
+                            <!-- Question item 3 -->
 
-                        <div>
-                            <input type="checkbox" name="question" id="question-check-box-03" hidden />
-                            <div class="question_item">
-                                <div class="question_item_top">
-                                    <h3 class="question_item_heading">
-                                        How do you charge for projects ?
-                                    </h3>
-                                    <label for="question-check-box-03" class="question_item_control"></label>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="question"
+                                    id="question-check-box-03"
+                                    hidden />
+                                <div class="question_item">
+                                    <div class="question_item_top">
+                                        <h3
+                                            class="question_item_heading"
+                                            data-aos="fade-down"
+                                            data-aos-anchor="#example-anchor"
+                                            data-aos-offset="500"
+                                            data-aos-duration="500">
+                                            How do you charge for projects ?
+                                        </h3>
+                                        <label
+                                            for="question-check-box-03"
+                                            class="question_item_control"></label>
+                                    </div>
+                                    <p class="question_item_desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
                                 </div>
-                                <p class="question_item_desc">
+                            </div>
+                            <!-- Question item 4 -->
+
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="question"
+                                    id="question-check-box-04"
+                                    hidden />
+                                <div class="question_item">
+                                    <div class="question_item_top">
+                                        <h3
+                                            class="question_item_heading"
+                                            data-aos="fade-down"
+                                            data-aos-anchor="#example-anchor"
+                                            data-aos-offset="500"
+                                            data-aos-duration="500">
+                                            What time-zone do you work in?
+                                        </h3>
+                                        <label
+                                            for="question-check-box-04"
+                                            class="question_item_control"></label>
+                                    </div>
+                                    <p class="question_item_desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Question item 5 -->
+
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="question"
+                                    id="question-check-box-05"
+                                    hidden />
+                                <div class="question_item">
+                                    <div class="question_item_top">
+                                        <h3
+                                            class="question_item_heading"
+                                            data-aos="fade-down"
+                                            data-aos-anchor="#example-anchor"
+                                            data-aos-offset="500"
+                                            data-aos-duration="500">
+                                            How often can we communicate?
+                                        </h3>
+                                        <label
+                                            for="question-check-box-05"
+                                            class="question_item_control"></label>
+                                    </div>
+                                    <p class="question_item_desc">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Atmosphere -->
+            <section class="atmosphere" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="atmosphere_top">
+                                <h2
+                                    class="section_heading atmosphere_heading"
+                                    data-aos="fade-down"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    My atmosphere
+                                </h2>
+                                <p
+                                    class="section_desc atmosphere_desc"
+                                    data-aos="fade-left"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="800">
                                     Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. In urna, non nisl
-                                    tincidunt ut elementum turpis.
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.w
+                                </p>
+                                <p
+                                    class="atmosphere_sub_heading"
+                                    data-aos="fade-up"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600">
+                                    @interaction_arif
                                 </p>
                             </div>
                         </div>
-                        <!-- Question item 4 -->
-
-                        <div>
-                            <input type="checkbox" name="question" id="question-check-box-04" hidden />
-                            <div class="question_item">
-                                <div class="question_item_top">
-                                    <h3 class="question_item_heading">
-                                        What time-zone do you work in?
-                                    </h3>
-                                    <label for="question-check-box-04" class="question_item_control"></label>
-                                </div>
-                                <p class="question_item_desc">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. In urna, non nisl
-                                    tincidunt ut elementum turpis.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="row atmosphere_bottom">
+                        <div class="col-lg-4 col-12">
+                            <img
+                                src="./assets/img/atmosphere_01.png"
+                                alt="Computer"
+                                class="atmosphere_img hed_mobile"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600" />
                         </div>
-                        <!-- Question item 5 -->
-
-                        <div>
-                            <input type="checkbox" name="question" id="question-check-box-05" hidden />
-                            <div class="question_item">
-                                <div class="question_item_top">
-                                    <h3 class="question_item_heading">
-                                        How often can we communicate?
-                                    </h3>
-                                    <label for="question-check-box-05" class="question_item_control"></label>
-                                </div>
-                                <p class="question_item_desc">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. In urna, non nisl
-                                    tincidunt ut elementum turpis.
-                                </p>
-                            </div>
+                        <div class="col-lg-4 col-12">
+                            <img
+                                src="./assets/img/atmosphere_02.png"
+                                alt="Computer"
+                                class="atmosphere_img"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" />
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <img
+                                src="./assets/img/atmosphere_03.png"
+                                alt="Computer"
+                                class="atmosphere_img hed_mobile"
+                                data-aos="fade-left"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600" />
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Atmosphere -->
-        <section class="atmosphere" id="service">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="atmosphere_top">
-                            <h2 class="section_heading atmosphere_heading">My atmosphere</h2>
-                            <p class="section_desc atmosphere_desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                                urna, non nisl tincidunt ut elementum turpis.w
-                            </p>
-                            <p class="atmosphere_sub_heading">@interaction_arif</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row atmosphere_bottom">
-                    <div class="col-lg-4 col-12">
-                        <img src="./assets/img/atmosphere_01.png" alt="Computer" class="atmosphere_img hed_mobile" />
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <img src="./assets/img/atmosphere_02.png" alt="Computer" class="atmosphere_img" />
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <img src="./assets/img/atmosphere_03.png" alt="Computer" class="atmosphere_img hed_mobile" />
-                    </div>
-                </div>
-                <!-- mobile -->
-                <div class="row atmosphere_control ">
-                    <div class="blog_item_slider_group">
-                        <div class="blog_item_slider"></div>
-                        <div class="blog_item_slider"></div>
-                        <div class="blog_item_slider blog_item_slider_active"></div>
-                        <div class="blog_item_slider"></div>
-                        <div class="blog_item_slider"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Cta -->
-        <section class="cta" id="contact">
-            <div class="cta_container">
-                <div class="cta_inner">
-                    <div>
-                        <img src="./assets/img/icon/atmosphere_icon.png" alt="Emoji" class="cta_img" />
-                        <h2 class="section_heading ctn_heading">Got a project? Let’s talk</h2>
-                        <p class="section_desc cta_desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                            urna, non nisl tincidunt ut elementum turpis.
-                        </p>
-                    </div>  
-                    <a href="#!" class="cta_btn btn">Book a Call</a>
-                    <img src="./assets/img/cta_01.svg" alt="" class="cta_decor_01 hed_mobile" />
-                    <img src="./assets/img/cta_02.svg" alt="" class="cta_decor_02 hed_mobile" />
-                    <img src="./assets/img/cta_03.svg" alt="" class="cta_decor_03 hed_mobile" />
                     <!-- mobile -->
-                     <img src="./assets/img/ctn_decor_mobile.svg" alt="" class="ctn_decor_mobile hed_pc">
+                    <div class="row atmosphere_control">
+                        <div class="blog_item_slider_group">
+                            <div class="blog_item_slider"></div>
+                            <div class="blog_item_slider"></div>
+                            <div
+                                class="blog_item_slider blog_item_slider_active"></div>
+                            <div class="blog_item_slider"></div>
+                            <div class="blog_item_slider"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-     <!-- Footer -->
-     <footer class="footer">
-        <div class="footer_top">
-          <div class="footer_logo">
-            <a href="#!" class="logo">
-              <img
-                src="./assets/img/header_01.png"
-                alt="Logo"
-                class="footer_logo_icon"
-              />
-              <p class="footer_desc">hi@arif.interactive</p>
-            </a>
-          
-          </div>
-          <a href="#!">
-            <img
-              src="./assets/img/logo.png"
-              alt="Avatar"
-              class="footer_avatar"
-            />
-        </a>
-          <nav class="footer_navbar">
-            <ul class="navbar_list">
-              <li>
-                <a href="#project" class="navbar_link">Projects</a>
-              </li>
-              <li>
-                <a href="#journey" class="navbar_link">Journey</a>
-              </li>
-              <li>
-                <a href="#service" class="navbar_link">Service</a>
-              </li>
-              <li>
-                <a href="#contact" class="navbar_link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer_bottom">
-          <p class="footer_inter">©interactiveArif 2021. All rights reserved.</p>
-          <div class="footer_line"></div>
-          <div class="footer_info">
-            <a href="#!" class="footer_policy">Privacy Policy</a>
-            <a href="#!" class="footer_term">Terms of Conditions</a>
-          </div>
-        </div>
-      </footer>
-</body>
+            </section>
+            <!-- Cta -->
+            <section class="cta" id="contact">
+                <div class="cta_container">
+                    <div class="cta_inner">
+                        <div>
+                            <img
+                                src="./assets/img/icon/atmosphere_icon.png"
+                                alt="Emoji"
+                                class="cta_img"
+                                data-aos="fade-down"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600" />
+                            <h2
+                                class="section_heading ctn_heading"
+                                data-aos="fade-left"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                Got a project? Let’s talk
+                            </h2>
+                            <p
+                                class="section_desc cta_desc"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="800">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <a href="#!" class="cta_btn btn">Book a Call</a>
+                        <img
+                            src="./assets/img/cta_01.svg"
+                            alt=""
+                            class="cta_decor_01 hed_mobile" />
+                        <img
+                            src="./assets/img/cta_02.svg"
+                            alt=""
+                            class="cta_decor_02 hed_mobile" />
+                        <img
+                            src="./assets/img/cta_03.svg"
+                            alt=""
+                            class="cta_decor_03 hed_mobile" />
+                        <!-- mobile -->
+                        <img
+                            src="./assets/img/ctn_decor_mobile.svg"
+                            alt=""
+                            class="ctn_decor_mobile show_mobile hed_pc" />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">          
+                        <div class="footer_top">
+                            <div
+                                class="footer_logo"
+                                data-aos="fade-right"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                <a href="#!" class="logo">
+                                    <img
+                                        src="./assets/img/header_01.png"
+                                        alt="Logo"
+                                        class="footer_logo_icon" />
+                                    <p class="footer_desc">
+                                        hi@arif.interactive
+                                    </p>
+                                </a>
+                            </div>
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/logo.png"
+                                    alt="Avatar"
+                                    class="footer_avatar"
+                                    data-aos="fade-down"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="600" />
+                            </a>
+                            <nav
+                                class="footer_navbar"
+                                data-aos="fade-left"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-easing="linear"
+                                data-aos-duration="600">
+                                <ul class="navbar_list">
+                                    <li>
+                                        <a href="#project" class="navbar_link"
+                                            >Projects</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#journey" class="navbar_link"
+                                            >Journey</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#service" class="navbar_link"
+                                            >Service</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#contact" class="navbar_link"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    
+                    <div class="footer_bottom">
+                        <p
+                            class="footer_inter"
+                            data-aos="fade-right"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-easing="linear"
+                            data-aos-duration="600">
+                            ©interactiveArif 2021. All rights reserved.
+                        </p>
+                        <div class="footer_line" ></div>
+                        <div
+                            class="footer_info"
+                            data-aos="fade-left"
+                            data-aos-anchor-placement="bottom-bottom"
+                            data-aos-easing="linear"
+                            data-aos-duration="600">
+                            <a href="#!" class="footer_policy"
+                                >Privacy Policy</a
+                            >
+                            <a href="#!" class="footer_term"
+                                >Terms of Conditions</a
+                            >
+                        </div>
+                    </div>
+        </footer>
+        <script>
+            // Chuỗi văn bản cần gõ
+            var text =
+                "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.”";
+            // Khởi tạo biến chỉ số ký tự
+            var i = 0;
+            // Lấy phần tử h2 để hiển thị văn bản
+            var tag = document.getElementById("text");
+            // Thiết lập tốc độ gõ
+            var speed = 38;
+
+            function typeWriter() {
+                // Kiểm tra nếu chưa hết chuỗi văn bản
+                if (i < text.length) {
+                    // Thêm từng ký tự vào phần tử
+                    tag.innerHTML += text.charAt(i);
+                    i++;
+                    // Gọi lại hàm typeWriter sau một khoảng thời gian
+                    setTimeout(typeWriter, speed);
+                }
+            }
+
+            // Gọi hàm typeWriter khi tải trang
+            window.onload = function () {
+                // Đảm bảo phần tử 'h2' được làm trống trước khi bắt đầu gõ
+                tag.innerHTML = "";
+                typeWriter();
+            };
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>

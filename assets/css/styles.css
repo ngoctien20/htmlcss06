@@ -272,6 +272,7 @@ letter-spacing: -2.24px;
     transition: 0.5s;
   }
   .special_item:hover {
+    cursor:pointer;
     box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.5);
   }
   .special_item:hover .special_item__img {
@@ -330,6 +331,7 @@ letter-spacing: -2.24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
   }
   .project_sub_heading{
     color:var(--black);
@@ -338,7 +340,10 @@ font-weight: 500;
 line-height: 40px; /* 125% */
 letter-spacing: -1.28px;
   }
-  .project_item:hover {
+  .project_item:hover .project_sub_heading {
+    color:var(--violet);
+  }
+  .project_item:hover{
     box-shadow: 0px 0px 21px -6px rgba(255, 255, 255, 0.8);
   }
   .project_item:hover .project_item_img {
@@ -352,6 +357,10 @@ letter-spacing: -1.28px;
   .project_item_desc {
     margin-top: 10px;
     max-width: 220px;
+    color: var(--gray);
+font-size: 1.6rem;
+font-weight: 400;
+line-height: 23px; /* 143.75% */
   }
   .project_item_link {
     display: block;
@@ -393,6 +402,7 @@ letter-spacing: -1.28px;
     text-align: center;
   }
   .interact_sub_heading {
+    
     margin-bottom: 10px;
     color: #5d3bee;
     font-size: 3.2rem;
@@ -493,6 +503,7 @@ line-height: 30px; /* 166.667% */
     text-align: center;
   }
   .blog_item_message {
+    overflow: hidden;
     display: inline-block;
     max-width: 679px;
     color: var(--gray);
@@ -502,7 +513,6 @@ line-height: 30px; /* 166.667% */
   }
   
   .blog_group_avt {
-    margin-top: 36px;
     display: inline-flex;
     align-items: center;
     column-gap: 15px;
@@ -528,6 +538,37 @@ line-height: 30px; /* 166.667% */
     border-radius: 50%;
     object-fit: cover;
   }
+  .typewriter {
+    position: relative;
+    padding-bottom: 38px;
+    /* font-family: 'Anonymous Pro', monospace; */
+    width: 100%;
+}
+.blog_item_message:after {
+    content:"";
+    display: inline-block;
+    background-color: black;
+    margin-left: 2px;
+    height: 20px;
+    width: 4px;
+    animation: cursor 0.4s infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
   .blog_item_name {
     color: var(--black);
     font-size: 3rem;
@@ -695,6 +736,7 @@ letter-spacing: -2.24px;
   margin: 0 auto;
 }
 .cta_inner {
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   align-items: center;

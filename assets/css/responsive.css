@@ -83,11 +83,20 @@
         font-size: 1.6rem;
         line-height: 26px;
     }
+    .hero_actions{
+        margin-top: 30px;
+    }
     .hero_link {
         font-size: 1.6rem;
     }
+    .hero_follow{
+        margin-top: 30px;
+    }
 
     /* clients */
+    .social{
+        margin-top: 120px;
+    }
     .social_inner {
         display: flex;
         justify-content: center;
@@ -117,6 +126,9 @@
         gap: 32px 0;
     }
     /* Special */
+    .special{
+        margin-top: 120px;
+    }
     .special_heading {
         font-size: 3.6rem;
         line-height: 42px; /* 116.667% */
@@ -166,6 +178,12 @@
         border-radius: 12px;
         background: var(--violet);
     }
+    .special_list{
+        margin-top: 50px;
+    }
+    .project{
+        margin-top: 120px;
+    }
     .project_heading {
         font-size: 3.6rem;
         text-align: center;
@@ -214,6 +232,9 @@
         top: -58px;
         right: 20px;
     }
+    .interact{
+        margin-top: 120px;
+    }
     .interact_sub_heading {
         font-size: 2rem;
     }
@@ -244,6 +265,9 @@
         font-weight: 400;
         line-height: 22px; /* 137.5% */
     }
+    .interact_row {
+        margin-top: 50px;
+    }
     .interact_intro {
         width: 118px;
         padding: 7px 21px;
@@ -251,6 +275,12 @@
         font-weight: 700;
         line-height: 30px; /* 250% */
         text-transform: uppercase;
+    }
+    .interact_video_wrap{
+        margin-top: 40px;
+    }
+    .blog{
+        margin-top: 120px;
     }
     .blog_heading {
         font-size: 3.6rem;
@@ -263,6 +293,7 @@
         font-weight: 400;
         line-height: 26px; /* 162.5% */
     }
+
     .blog_item_message {
         width: 350px;
         height: 114px;
@@ -270,12 +301,21 @@
         font-weight: 400;
         line-height: 30px; /* 166.667% */
     }
+    .blog_row{
+        margin-top: 40px;
+    }
     .blog_decor_01 {
         width: 96.163px;
         flex-shrink: 0;
     }
     .blog_decor_02 {
         width: 96.163px;
+    }
+    .blog_item_slider_group{
+        margin: 20px auto 0;
+    }
+    .question{
+        margin-top: 120px;
     }
     .question_heading {
         width: 316px;
@@ -289,6 +329,13 @@
         letter-spacing: -0.96px;
         width: 264px;
     }
+    .question_list {
+        margin-top: 0;
+    }
+    .typewriter {
+        padding-bottom: 48px;
+    }
+
     .question_item_control {
         width: 33px;
         height: 33px;
@@ -302,11 +349,18 @@
     input[id*="question-check"]:checked ~ .question_item .question_item_control::after {
         content: url(../img/icon/Vector\ 86.svg);
         top: 3px;
+    }.question_item_top
+    {
+        margin-top: 40px;
     }
     .question_item_desc {
+        margin-top: 15px;
         width: 316px;
         height: 78px;
         font-size: 1.6rem;
+    }
+    .atmosphere{
+        margin-top: 120px;
     }
     .atmosphere_heading{
         font-size: 3.6rem;
@@ -320,13 +374,18 @@ font-weight: 400;
 line-height: 26px; /* 162.5% */
     }
     .atmosphere_sub_heading{
+        margin: 10px 0 60px;
         font-size: 2rem;
 font-weight: 500;
 line-height: 40px; /* 200% */
 letter-spacing: -0.8px;
 text-decoration-line: underline;
     }
+    .cta{
+        margin-top: 120px;
+    }
     .cta_img{
+        margin-bottom: 10px;
         width: 48px;
 height: 48px;
     }
@@ -339,12 +398,14 @@ line-height: 42px; /* 116.667% */
 letter-spacing: -1.44px;
     }
     .cta_desc{
+        margin-top: 10px;
         width: 350px;
 font-size: 1.6rem;
 font-weight: 400;
 line-height: 26px; /* 162.5% */
     }
     .cta_btn{
+        margin-top: 30px;
         max-width: 147px;
     }
     .ctn_decor_mobile{
@@ -352,7 +413,17 @@ position: absolute;
 top: 0;
 right: 0;
     }
+    .navbar_list{
+        justify-content: center;
+    }
+    .navbar_link{
+        padding: 0 0;
+    }
+    .special_item {
+        padding: 32px 0 32px 42px;
+    }
     .footer_top{
+        margin-top: 120px;
         display: flex;
         flex-direction: column;
     }
@@ -360,7 +431,7 @@ right: 0;
         order:1;
     }
     .footer_navbar{
-        margin: 20px 0 58px;
+        margin: 20px 0 64px;
         order:2;
     }
     .footer_logo{
@@ -369,16 +440,21 @@ right: 0;
     .footer_bottom{
         text-align: center;
         display: flex;
+       
         flex-direction: column;
         border:none;
+        padding: 0;
     }
     .footer_inter{   
+        display: flex;
+        justify-content: center;
+        display: flex;
         order:3
     }
     .footer_line{
         width: 1429px;
         max-width: calc(100% - 40px);
-        padding: 18px 129px 0;
+        padding: 29px 129px 20px 129px;
         margin: 32px auto 0;
         border-top: 1px solid rgba(12, 7, 32, 0.2);
         order:2;
@@ -387,6 +463,5 @@ right: 0;
         order:1;
         display: flex;
         justify-content:center;
-       
     }
 }
