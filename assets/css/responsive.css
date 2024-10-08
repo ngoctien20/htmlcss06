@@ -73,6 +73,10 @@
     .hero_decor_right {
         display: none;
     }
+    .hero_social_icon{
+        width: 16px;
+        height: 16px;
+    }
     .hero_heading {
         width: 260px;
         font-size: 4.2rem;
