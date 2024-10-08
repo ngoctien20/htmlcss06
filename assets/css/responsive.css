@@ -123,7 +123,7 @@
         display: grid;
         grid-template-columns: auto auto;
         justify-items: flex-start;
-        gap: 32px 0;
+        gap: 32px 5px;
     }
     /* Special */
     .special{
@@ -135,6 +135,7 @@
         letter-spacing: -1.44px;
     }
     .special_desc {
+        line-height: 26px;
         font-size: 1.6rem;
     }
     .special_item {

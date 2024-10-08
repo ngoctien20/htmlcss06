@@ -40,20 +40,16 @@ font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:#fff;
+    background: var(--violet);
+    color: #FDFDFD;
+    border-radius: 10px;
+    box-shadow: 0px 0px 21px -6px rgba(13, 0, 255, 0.8);
     padding: 1px;
-    color: var(--black);
 font-size: 1.8rem;
 font-weight: 700;
 line-height: 30px; /* 166.667% */
 width: 170px;
 height: 62px;
-}
-.btn:hover{
-    background: var(--violet);
-    color: #FDFDFD;
-    border-radius: 10px;
-    box-shadow: 0px 0px 21px -6px rgba(13, 0, 255, 0.8);
 }
 .section_link{
     color:var(--black);
@@ -157,6 +153,7 @@ left: -194px;
     line-height: 76px;
 }
 .hero_desc{
+  line-height: 30px;
     margin-top: 20px;
     font-size: 1.8rem;
     width: 370px;
@@ -259,6 +256,7 @@ line-height: 66px; /* 117.857% */
 letter-spacing: -2.24px;
   }
   .special_desc {
+    line-height: 30px;
     display: inline-block;
     margin-top: 20px;
     max-width: 534px;
@@ -387,10 +385,6 @@ line-height: 23px; /* 143.75% */
   }
   .project_btn {
     margin: 80px auto 0;
-    background: var(--violet);
-    color: #fff;
-  }
-  .project_btn:hover{
     background: #fff;
     color:var(--black);
   }
@@ -710,6 +704,7 @@ input[id*="question-check"]:checked
 letter-spacing: -2.24px;
 }
 .atmosphere_desc {
+  line-height: 30px;
   max-width: 528px;
   display: inline-block;
   margin-top: 20px;
@@ -756,6 +751,7 @@ letter-spacing: -2.24px;
 letter-spacing: -2.24px;
 }
 .cta_desc {
+  line-height: 30px; 
   margin-top: 20px;
   display: inline-block;
   max-width: 574px;
